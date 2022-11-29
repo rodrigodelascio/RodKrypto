@@ -21,6 +21,10 @@ th, td {
     padding: 15px;
 }
 
+#nameHeader {
+    text-align: left;
+}
+
 .logo {
     table-layout: fixed;
     width: 1%;
@@ -42,6 +46,7 @@ th, td {
 }
 
 .volume,
-.marketCap {
+.marketCap,
+.price {
     text-align: right;
 }

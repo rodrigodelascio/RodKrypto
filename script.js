@@ -735,13 +735,15 @@ async function requestCoins() {
 
     async function getLogoSeven() {
 
-        let urlLogo = `https://api.coinpaprika.com/v1/coins/${coinData[7].id}`
+        let sevenNameURL = sevenName.toLowerCase()
+
+        let urlLogo = `https://api.coingecko.com/api/v3/coins/${sevenNameURL}`
 
         const require = await fetch(urlLogo)
 
         const logoData = await require.json()
 
-        logoSeven.src = `${logoData.logo}`
+        logoSeven.src = `${logoData.image.small}`
     }
 
     getLogoSeven()
@@ -803,13 +805,15 @@ async function requestCoins() {
 
     async function getLogoEight() {
 
-        let urlLogo = `https://api.coinpaprika.com/v1/coins/${coinData[8].id}`
+        let eightNameURL = eightName.toLowerCase()
+
+        let urlLogo = `https://api.coingecko.com/api/v3/coins/${eightNameURL}`
 
         const require = await fetch(urlLogo)
 
         const logoData = await require.json()
 
-        logoEight.src = `${logoData.logo}`
+        logoEight.src = `${logoData.image.small}`
     }
 
     getLogoEight()
@@ -871,13 +875,15 @@ async function requestCoins() {
 
     async function getLogoNine() {
 
-        let urlLogo = `https://api.coinpaprika.com/v1/coins/${coinData[9].id}`
+        let nineNameURL = nineName.toLowerCase()
+
+        let urlLogo = `https://api.coingecko.com/api/v3/coins/${nineNameURL}`
 
         const require = await fetch(urlLogo)
 
         const logoData = await require.json()
 
-        logoNine.src = `${logoData.logo}`
+        logoNine.src = `${logoData.image.small}`
     }
 
     getLogoNine()
