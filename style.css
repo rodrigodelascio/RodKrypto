@@ -21,6 +21,27 @@ th, td {
     padding: 15px;
 }
 
+.logo {
+    table-layout: fixed;
+    width: 1%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: right;
+}
+
+.logoPic {
+    width: 100%;
+}
+
 .fluct {
     font-size: 85%;
+}
+
+.coinName {
+    text-align: left;
+}
+
+.volume,
+.marketCap {
+    text-align: right;
 }
