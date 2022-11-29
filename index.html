@@ -5,13 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RodKrypto app</title>
+    <title>RodKrypto - Cryptocurrency Price List</title>
+    <link rel="icon" type="image/x-icon" href="./images/rodKryptoIcon.png">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <!-- NavBar Section -->
-    <div><img src="" alt="" id="exchangeRate"></div>
+    <nav id="navBar">
+        <img src="./images/rodKryptoGreen.png" alt="RodKrypto Logo" id="mainLogo">
+
+        <div id="navInfo">
+
+            <div id="numberOfCoins"></div>
+            <div id="btcDominance"></div>
+            <div id="volumePerDay"></div>
+            <div id="globalMktCap"></div>
+
+        </div>
+
+    </nav>
+
+    <!-- Landing Section -->
+
+    <div class="title">
+
+        <h1>Top 10 cryptocurrencies price list</h1>
+        <h3>All cryptocurrencies ranked by market cap</h3>
+
+    </div>
 
 
     <!-- Table Section -->
@@ -31,7 +53,7 @@
         </thead>
 
         <tbody id="myData">
-            
+
             <tr id="coinZero">
                 <th id="rankZero"></th>
                 <th class="logo"><img src="" alt="" id="logoZero" class="logoPic"></th>

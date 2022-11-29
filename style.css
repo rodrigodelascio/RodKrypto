@@ -6,9 +6,47 @@ html {
 }
 
 body {
-    margin: 10%;
+    margin: 5%;
     color: #dedede;
-    background: #000207;
+    background: #050c1d;
+}
+
+#navBar {
+    position: absolute;
+    top: 3%;
+    width: 90%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #676767;
+}
+
+#mainLogo {
+    width: 15%;
+    position: relative;
+    }
+
+#navInfo {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -22px;
+    color: #dfd173;
+    font-size: 85%;
+}
+
+#numberOfCoins,
+#btcDominance,
+#volumePerDay,
+#globalMktCap {
+    margin-left: 20px;
+}
+
+.title {
+    margin-top: 150px;
+
+}
+
+table {
+    margin-top: 50px;
+
 }
 
 .row {

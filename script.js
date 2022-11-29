@@ -1,5 +1,3 @@
-const exchangeRate = document.getElementById("exchangeRate")
-
 const myData = document.getElementById("myData")
 
 const coinZero = document.getElementById("coinZero")
@@ -114,6 +112,13 @@ const logoEight = document.getElementById("logoEight")
 const logoNine = document.getElementById("logoNine")
 
 
+
+const numberOfCoins = document.getElementById("numberOfCoins") 
+const btcDominance = document.getElementById("btcDominance")
+const volumePerDay = document.getElementById("volumePerDay")
+const globalMktCap = document.getElementById("globalMktCap")
+
+
 // Currency conversion API request
 
 let myRate;
@@ -130,8 +135,6 @@ const requestExchange = () => {
         var response = request.response;
 
         myRate = response.result
-
-        console.log(myRate)
     }
 }
 
@@ -148,18 +151,18 @@ async function requestCrypto() {
 
     const cryptoData = await response.json()
 
-    console.log(cryptoData)
-
-    let numberCoins = cryptoData.cryptocurrencies_number
-    let marketCap = cryptoData.market_cap_usd
+    let numberCoins = Intl.NumberFormat('en-GB').format(cryptoData.cryptocurrencies_number)
+    let marketCap = Intl.NumberFormat('en-GB', { maximumFractionDigits: 0 }).format(cryptoData.market_cap_usd * myRate)
     let bitDominance = cryptoData.bitcoin_dominance_percentage
-    let volume = cryptoData.volume_24h_usd
+    let volume = Intl.NumberFormat('en-GB', { maximumFractionDigits: 0 }).format(cryptoData.volume_24h_usd * myRate)
 
-
-    console.log(numberCoins, marketCap, bitDominance, volume)
-
-    console.log(Intl.NumberFormat().format(marketCap))
+    numberOfCoins.textContent = `Coins: ${numberCoins}`
+    globalMktCap.textContent = `Market Cap: £ ${marketCap}` 
+    volumePerDay.textContent = `Volume (24h): £ ${volume}` 
+    btcDominance.textContent = `BTC Dominance: ${bitDominance}%`
 }
+
+requestCrypto()
 
 
 // Crypto Coins Data Function
