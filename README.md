@@ -3,32 +3,31 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [The purpose](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Link](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
+- [The purpose](#the-challenge)
+- [Screenshot](#screenshot)
+- [Link](#links)
+- [Built with](#built-with)
 - [Author](#author)
 
 ## Overview
 
 Display of top 10 cryptocurrencies in real time ranked by market cap, with priced converted to GBP.
 
-### The purpose
+## The purpose
 
 Users should be able to:
 
 - View 10 cryptocurrencies in real time ranked by market cap, with priced converted to GBP
 
-### Screenshot
+## Screenshot
 
 ![](./images/rodKryptoShowcase.png)
 
-### Link
+## Link
 
 - Live Site URL: [Follow this link](https://rodrigodelascio.github.io/RodKrypto/)
 
-### Built with
+## Built with
 
 - HTML
 - CSS
