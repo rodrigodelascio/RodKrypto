@@ -685,7 +685,7 @@ async function requestCoins() {
 
   getLogoSix();
 
-  // Coin Seven data (review)
+  // Coin Seven data (review logo)
 
   let sevenRank = coinData[7].rank;
   let sevenSymbol = coinData[7].symbol;
